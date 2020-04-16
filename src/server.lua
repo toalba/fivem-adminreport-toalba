@@ -9,7 +9,7 @@ AddEventHandler("adminreport:report",function (argsstring)
     xPlayer.triggerEvent('esx:showNotification',endmessage)
 	local xPlayers = ESX.GetPlayers()
 	for i=1, #xPlayers, 1 do
-		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
+	    local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
         if (xPlayer.getGroup() == 'admin') or (xPlayer.getGroup() == 'superadmin') or (xPlayer.getGroup() == 'mod')then
             xPlayer.triggerEvent('esx:showNotification',endmessage)
         end
