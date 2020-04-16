@@ -1,5 +1,4 @@
-RegisterCommand("reporttoadmin",function (source,args)
+RegisterCommand("report",function (source,args)
     local argsstring = table.concat(args," ")
-    TriggerServerEvent("adminreport:report",source,argsstring)
-
+    TriggerServerEvent("adminreport:report",argsstring)
 end)
