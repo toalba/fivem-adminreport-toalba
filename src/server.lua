@@ -7,7 +7,7 @@ AddEventHandler("admintools:report",function (argsstring)
     local endmessage="Spieler".." ~g~"..player.."["..source.."]~s~".." reportet:".." ".. argsstring
     local xPlayer=ESX.GetPlayerFromId(source)
     xPlayer.triggerEvent('esx:showNotification',endmessage)
-    TriggerServerEvent('admintools:showupmessage',1,endmessage)
+    TriggerEvent('admintools:showupmessage',1,endmessage)
 end)
 
 RegisterServerEvent('admintools:showupmessage')
